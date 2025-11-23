@@ -1,0 +1,1 @@
+java com/proyecto/Proyecto.java -inputDir './mapas/' -outputDir './output/' -rows 900 -cols 1600
