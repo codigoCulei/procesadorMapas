@@ -8,15 +8,26 @@ package com.proyecto;
  * 
  */
 public class VecIntensidades{
+    /**
+     * arreglo de intensidades de igual longitud que el arreglo de numeros de onda (en un conjunto de datos bien formado).
+     */
     private final int[] intensidadVec;   
-
+    /**
+     * El constructor espera un arreglo de enteros, el unico miembro de la clase
+     */
     public VecIntensidades(int[] intVec){
 	intensidadVec = intVec.clone();
     }
+    /**
+     * Getter de intensidad, regresa todo el vector
+     */
     public int[] getVecIntensidades(){
 	return this.intensidadVec;
     };
-    public int getIntensidadAtIndex(int indice){
+    /**
+     * Getter de intensidad en un indice particular, regresa solo una intensidad.
+     */
+    public int getIntensidadEnIndice(int indice){
 	return this.intensidadVec[indice];
     };
 

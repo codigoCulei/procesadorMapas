@@ -8,20 +8,33 @@ package com.proyecto;
  * 
  *
  * @author uwu
-
  */
 public class VecNumeroDeOnda{
+    /**
+     * Este miembro contiene los numeros de onda en un arreglo, (varian entre -300.0 a 3000.0+ ). En un conjunto de datos bien formado, tiene la misma cardinalidad que cada elemento del arreglo de vectores de intensidad VecIntensidad
+     * @see VecIntensidad
+     */
     private final double[] numeroDeOnda;
     
 
+    /**
+     * el constructor clona el arreglo de entrada para evitar problemas
+     * de aliasing.
+     */
     public VecNumeroDeOnda(double[] numOndaVec){
 	numeroDeOnda = numOndaVec.clone();
     }
+
+    /**
+     * adquiere el numero de onda en un indice dado del vector numero de onda
+     */
+    public double getVecNumeroDeOndaEnIndice(int indice){
+	return this.numeroDeOnda[indice];
+    }
+    /**
+     *adquiere el vector numero de onda
+     */	
     public double[] getVecNumeroDeOnda(){
 	return this.numeroDeOnda;
     };
-    public double getVecNumeroDeOndaAtIndex(int indice){
-	return this.numeroDeOnda[indice];
-    };
-
 }
